@@ -2,7 +2,7 @@ from gradio_client import Client, handle_file
 from PIL import Image
 import io
 import os
-os.environ['HF_API_TOKEN'] = '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'
+os.environ['HF_API_TOKEN'] = ------enter the api------------
 
 client = Client("jallenjia/Change-Clothes-AI")
 result = client.predict(
@@ -27,3 +27,4 @@ image = Image.open(image_path)
 # Save the image to a file
 image.save('output_image_pant.jpg')
 print("Image saved to output_image.jpg")
+
